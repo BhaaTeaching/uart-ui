@@ -1,0 +1,45 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for a clean look */
+    border: 3px solid #8d2457; /* Primary color for emphasis */
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    gap: 15px;
+}
+
+.dashboard-container div {
+    background-color: #fff;
+    border: 2px solid #f1a946; /* Secondary color for contrast */
+    border-radius: 12px;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #333;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 150px;
+}
+
+.label {
+    font-weight: bold;
+    color: #8d2457;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

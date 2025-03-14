@@ -19,7 +19,7 @@ export class DashboardComponent {
     this.subscription = this.websocketService.messages$.subscribe((messages: SensorData | null) => {
       if (messages) {
         this.messages = messages;
-        console.log('✅ Received messages:', messages);
+        console.log('Received messages:', messages);
       }
     });
   }

@@ -30,7 +30,6 @@ export class WebsocketService {
       console.log('Connected to WebSocket');
       this.stompClient?.subscribe('/topic/response', (message: IMessage) => {
         const parsedData = JSON.parse(message.body) as SensorData;
-        debugger;
         this.addMessage(parsedData);
       });
     };
@@ -53,8 +52,8 @@ export class WebsocketService {
     }
   }
 
-  private addMessage(message: SensorData): void {
-    const currentMessages = this.messageSubject.getValue();
-    this.messageSubject.next(message);
+  private addMessage(sensorData: SensorData): void {
+    console.log("new sensor data recieved", sensorData);
+    this.messageSubject.next(sensorData);
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { WebsocketService } from '../websocket.service';
+import { WebsocketService } from '../services/websocket.service';
 import { Subscription } from 'rxjs';
-import { SensorData } from 'src/SensorData';
+import { SensorData } from 'src/app/models/SensorData';
 import Chart from 'chart.js/auto';
 
 @Component({

@@ -1,6 +1,14 @@
 .title-container {
     display: flex;
     justify-content: center;  
-    align-items: center;        
+    align-items: center;  
+    flex-direction: column;      
     padding-top: 1rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.dashboard{
+    max-width: 100%;
+    width: 100%;
 }

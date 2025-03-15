@@ -1,10 +1,18 @@
+.last-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
+    width: 100%;
+}
+
 .dashboard-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #f9f9f9; /* Light background for a clean look */
-    border: 3px solid #8d2457; /* Primary color for emphasis */
+    background-color: #f9f9f9; 
+    border: 3px solid #8d2457;
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -16,7 +24,7 @@
 
 .dashboard-container div {
     background-color: #fff;
-    border: 2px solid #f1a946; /* Secondary color for contrast */
+    border: 2px solid #f1a946; 
     border-radius: 12px;
     padding: 20px 30px;
     text-align: center;
@@ -42,4 +50,12 @@
         flex-direction: column;
         gap: 15px;
     }
+}
+
+
+.canvas-container{
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
 }
